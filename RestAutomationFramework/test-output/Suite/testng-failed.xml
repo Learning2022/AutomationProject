@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.employeeapitestcases.TC005_DELETE_Employee_Record">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.employeeapitestcases.TC005_DELETE_Employee_Record -->
+      <class name="com.employeeapitestcases.TC002_GET_single_Employee_Record">
+        <methods>
+          <include name="checkResponseTime"/>
+          <include name="checkResponseBody"/>
+          <include name="getEmployeeData"/>
+        </methods>
+      </class> <!-- com.employeeapitestcases.TC002_GET_single_Employee_Record -->
+      <class name="com.employeeapitestcases.TC004_PUT_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="updateEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapitestcases.TC004_PUT_Employee_Record -->
+      <class name="com.employeeapitestcases.TC003_POST_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="createEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapitestcases.TC003_POST_Employee_Record -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
